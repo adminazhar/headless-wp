@@ -1,14 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import { HeaderLayout } from './components/layout/header/header';
+import { FooterLayout } from './components/layout/footer/footer';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Yo WP!</p>
-      </header>
+    <div>
+      <HeaderLayout></HeaderLayout>
+      <p>Yo WP!</p>
+      <FooterLayout></FooterLayout>
     </div>
   );
 }
